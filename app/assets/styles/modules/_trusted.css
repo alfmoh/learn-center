@@ -3,7 +3,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        background-color: $lightGrey;
+        background-color: $lighterGrey;
         margin: 0;
         padding: 0;
 
@@ -17,7 +17,6 @@
             filter: grayscale(100%);
 
             &__img {
-                cursor: pointer;
                 height: 100px;
                 width: 100px;
             }
