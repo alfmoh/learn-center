@@ -1,0 +1,48 @@
+.site-nav {
+    display: flex;
+    justify-content: space-between;
+    color: $mainWhite;
+
+    &-item {
+        display: flex;
+        max-width: 50vw;
+        width: 100%;
+        align-items: center;
+
+        &-left {
+            max-width: 30vw;
+            justify-content: space-evenly;
+
+            &__cat {
+                display: flex;
+                align-items: center;
+
+                &__caret {
+                    cursor: pointer;
+                    width: 10px;
+                    height: 10px;
+                    border-width:2px;
+                    border-style:solid;
+                    border-color:transparent $mainWhite $mainWhite transparent;
+                    border-radius: 20%;
+                    transform:rotate(45deg);
+                    margin: -2px 0 5px 10px;
+    
+                    &:hover {
+                        border-width: 3px;
+                        transition: border-width .2s ease;
+                    }
+                }
+            }          
+        }
+
+        &-right {
+            max-width: 30vw;
+            justify-content: space-evenly;
+
+            &__login {
+                padding: 10px 25px;
+            }
+        }
+    }
+}
