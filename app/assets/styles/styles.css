@@ -1,7 +1,8 @@
 @import "normalize.css";
-@import "base/_variables.css";
+@import "base/_variables";
 @import "base/_media-queries";
-@import "base/_mixins.css";
-@import "base/_global.css";
-@import "modules/_top.css";
-@import "modules/_nav.css";
+@import "base/_mixins";
+@import "base/_global";
+@import "modules/_top";
+@import "modules/_nav";
+@import "modules/_banner";

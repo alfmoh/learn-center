@@ -1,0 +1,53 @@
+.banner {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(25%);
+    align-items: center;
+    color: $mainWhite;
+    height: 100%;
+
+    &__title {
+        letter-spacing: 2.5px;
+        margin-bottom: -10px;
+    }
+
+    &__sub-title {
+        font-size: 1.1rem;
+        letter-spacing: 1.5px;
+        max-width: 70%;
+        text-align: center;
+    }
+
+    &-search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @mixin inputBox & {}
+
+        &__icon {
+            height: fit-content;
+            margin-left: -70px;
+        }
+    }
+
+    &-sample-list {
+        display: flex;
+        &__item {
+            position: relative;
+            cursor: pointer;
+            list-style: none;
+            border-right: solid 2px;
+            margin-right: 5px;
+            padding: 0 15px;
+
+            &:last-child {
+                border-right: none;
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

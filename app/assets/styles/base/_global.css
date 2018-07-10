@@ -5,7 +5,12 @@ body {
 .round--edge {
     border-radius: 20px;
 }
+.round--edge-extra {
+    border-radius: 100px;
+}
 
-.orange--background {
+.orange--button {
     background: $mainOrange;
+    padding: 10px 25px;
+    cursor: pointer;
 }

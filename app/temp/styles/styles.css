@@ -349,8 +349,14 @@ body {
     border-radius: 20px;
 }
 
-.orange--background {
+.round--edge-extra {
+    border-radius: 100px;
+}
+
+.orange--button {
     background: #FD7346;
+    padding: 10px 25px;
+    cursor: pointer;
 }
 
 .top-section {
@@ -371,6 +377,7 @@ body {
         max-width: 50vw;
         width: 100%;
         align-items: center;
+        cursor: pointer;
     }
 
 .site-nav-item-left {
@@ -408,4 +415,96 @@ body {
 
 .site-nav-item-right__login {
                 padding: 10px 25px;
+            }
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    -webkit-transform: translateY(25%);
+            transform: translateY(25%);
+    align-items: center;
+    color: #FFF;
+    height: 100%;
+}
+
+.banner__title {
+        letter-spacing: 2.5px;
+        margin-bottom: -10px;
+    }
+
+.banner__sub-title {
+        font-size: 1.1rem;
+        letter-spacing: 1.5px;
+        max-width: 70%;
+        text-align: center;
+    }
+
+.banner-search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+.banner-search__input {
+        width: 35.0625rem;
+        border-radius: 100px;
+        border: solid 1px #FFF;
+        height: 3.125rem;
+        padding-left: 10px;
+    }
+
+.banner-search__input:focus {
+            outline: none;
+        }
+
+.banner-search__input::-webkit-input-placeholder {
+            font-size: 1.125rem;
+            padding-left: 1.25rem;
+            opacity: 0.5;
+        }
+
+.banner-search__input:-ms-input-placeholder {
+            font-size: 1.125rem;
+            padding-left: 1.25rem;
+            opacity: 0.5;
+        }
+
+.banner-search__input::-ms-input-placeholder {
+            font-size: 1.125rem;
+            padding-left: 1.25rem;
+            opacity: 0.5;
+        }
+
+.banner-search__input::placeholder {
+            font-size: 1.125rem;
+            padding-left: 1.25rem;
+            opacity: 0.5;
+        }
+
+.banner-search__icon {
+            height: -webkit-fit-content;
+            height: -moz-fit-content;
+            height: fit-content;
+            margin-left: -70px;
+        }
+
+.banner-sample-list {
+        display: flex;
+    }
+
+.banner-sample-list__item {
+            position: relative;
+            cursor: pointer;
+            list-style: none;
+            border-right: solid 2px;
+            margin-right: 5px;
+            padding: 0 15px;
+        }
+
+.banner-sample-list__item:last-child {
+                border-right: none;
+            }
+
+.banner-sample-list__item:hover {
+                text-decoration: underline;
             }

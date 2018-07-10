@@ -8,6 +8,7 @@
         max-width: 50vw;
         width: 100%;
         align-items: center;
+        cursor: pointer;
 
         &-left {
             max-width: 30vw;
