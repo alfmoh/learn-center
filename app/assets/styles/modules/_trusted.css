@@ -1,0 +1,30 @@
+.trusted {
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: $lightGrey;
+        margin: 0;
+        padding: 0;
+
+        &::before, &::after {
+            content: "";
+        }
+
+        &__item {
+            padding: 15px 0;
+            list-style: none;
+            filter: grayscale(100%);
+
+            &__img {
+                cursor: pointer;
+                height: 100px;
+                width: 100px;
+            }
+
+            &:hover {
+                filter: grayscale(0%);
+            }
+        }
+    }
+}

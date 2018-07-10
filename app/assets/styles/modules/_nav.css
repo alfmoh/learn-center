@@ -12,7 +12,11 @@
 
         &-left {
             max-width: 30vw;
-            justify-content: space-evenly;
+            justify-content: space-between;
+
+            &::before, &::after {
+                content: "";
+            }
 
             &__cat {
                 display: flex;
@@ -39,7 +43,11 @@
 
         &-right {
             max-width: 30vw;
-            justify-content: space-evenly;
+            justify-content: space-between;
+
+            &::before, &::after {
+                content: "";
+            }
 
             &__login {
                 padding: 10px 25px;
