@@ -22,10 +22,11 @@
         justify-content: center;
         align-items: center;
 
-        &__icon {
+        &__button {
             height: fit-content;
             margin-left: -130px;
             color: $mainWhite;
+            padding: 12px 25px;
         }
     }
 }

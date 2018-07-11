@@ -577,7 +577,7 @@ body {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 270px));
         grid-auto-rows: 1fr;
-        grid-column-gap: 30px;
+        grid-gap: 30px;
         width: inherit;
         justify-content: center;
     }
@@ -692,6 +692,7 @@ body {
         padding: 0;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
+        grid-row-gap: 40px;
         grid-auto-rows: 1fr;
         text-align: center;
         justify-content: center;
@@ -780,10 +781,11 @@ body {
             opacity: 0.5;
         }
 
-.subscribe-content__icon {
+.subscribe-content__button {
             height: -webkit-fit-content;
             height: -moz-fit-content;
             height: fit-content;
             margin-left: -130px;
             color: #FFF;
+            padding: 12px 25px;
         }

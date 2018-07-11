@@ -19,7 +19,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 270px));
         grid-auto-rows: 1fr;
-        grid-column-gap: 30px;
+        grid-gap: 30px;
         width: inherit;
         justify-content: center;
 
