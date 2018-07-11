@@ -14,3 +14,7 @@ body {
     padding: 10px 25px;
     cursor: pointer;
 }
+
+.light--blue {
+    color: $lightBlue;
+}

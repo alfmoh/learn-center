@@ -4,7 +4,6 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    color: $lightBlue;
 
     &__title {
         margin: 70px 0 -10px 0;
