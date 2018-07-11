@@ -708,6 +708,8 @@ body {
 
 .testimonials-list__item__testimony {
                margin-top: 30px;
+               color: #999999;
+               padding: 0 20px;
             }
 
 .testimonials-list__item__name {
@@ -717,3 +719,71 @@ body {
 .testimonials-list__item__name__company {
                     font-size: .85rem;
                 }
+
+.subscribe {
+    text-align: center;
+    background: linear-gradient(to right, rgba(196, 139, 64, 0.8), rgba(83, 83, 90, 0.9)), 
+                url('/assets/images/subscribe.jpg');
+    background-size: cover;
+    color: rgb(235, 222, 211);
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.subscribe__sub-heading {
+        margin: -10px 0 -70px 0;
+    }
+
+.subscribe-content {
+        height: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+.subscribe-content__input {
+        width: 35.0625rem;
+        border-radius: 100px;
+        border: solid 1px #FFF;
+        height: 3.125rem;
+        padding-left: 10px;
+    }
+
+.subscribe-content__input:focus {
+            outline: none;
+        }
+
+.subscribe-content__input::-webkit-input-placeholder {
+            font-size: 1.125rem;
+            padding-left: 1.25rem;
+            opacity: 0.5;
+        }
+
+.subscribe-content__input:-ms-input-placeholder {
+            font-size: 1.125rem;
+            padding-left: 1.25rem;
+            opacity: 0.5;
+        }
+
+.subscribe-content__input::-ms-input-placeholder {
+            font-size: 1.125rem;
+            padding-left: 1.25rem;
+            opacity: 0.5;
+        }
+
+.subscribe-content__input::placeholder {
+            font-size: 1.125rem;
+            padding-left: 1.25rem;
+            opacity: 0.5;
+        }
+
+.subscribe-content__icon {
+            height: -webkit-fit-content;
+            height: -moz-fit-content;
+            height: fit-content;
+            margin-left: -130px;
+            color: #FFF;
+        }

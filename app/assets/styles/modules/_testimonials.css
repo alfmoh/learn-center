@@ -25,6 +25,8 @@
 
             &__testimony {
                margin-top: 30px;
+               color: $lightGrey;
+               padding: 0 20px;
             }
 
             &__name {

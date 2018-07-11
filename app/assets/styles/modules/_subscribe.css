@@ -1,0 +1,31 @@
+.subscribe {
+    text-align: center;
+    background: linear-gradient(to right, rgba(196, 139, 64, 0.8), rgba(83, 83, 90, 0.9)), 
+                url('/assets/images/subscribe.jpg');
+    background-size: cover;
+    color: rgb(235, 222, 211);
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+
+    &__sub-heading {
+        margin: -10px 0 -70px 0;
+    }
+    
+
+    &-content {
+        height: 100%;
+        @mixin inputBox & {}
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__icon {
+            height: fit-content;
+            margin-left: -130px;
+            color: $mainWhite;
+        }
+    }
+}
