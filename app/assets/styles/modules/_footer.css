@@ -1,0 +1,33 @@
+.footer-content {
+
+    &-list {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: $mainOrange;
+        justify-content: space-between;
+        padding: 70px 40px;
+        color: $mainWhite;
+        height: fit-content;
+
+        &__desc {
+            margin: 0;
+            padding: 0;
+        }
+
+        &__item {
+            flex-basis: 300px;
+            list-style: none;
+            align-item: flex-start;
+            margin: 0 auto;
+            text-align: center;
+
+            &-list {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+        }
+    }
+}
