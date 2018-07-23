@@ -363,6 +363,11 @@ body {
     color: rgb(66, 74, 80);
 }
 
+/* 
+body {
+    background-color: green;
+} */
+
 .top-section {
     background: linear-gradient(to right, rgba(196, 139, 64, 0.8), rgba(83, 83, 90, 0.9)), 
                 url('/assets/images/lady-learn.jpg');
@@ -377,19 +382,20 @@ body {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    transition:background-color .3s linear,opacity 0.3s linear; 
+    transition:background-color,margin .3s linear,opacity 0.3s linear; 
 }
-
-.site-nav-visible {
-        background-color: rgba(49, 49, 56, 0.7);
-    }
 
 @media (min-width : 0) and (max-width : 568px) {
 
 .site-nav {
         flex-direction: column;
-        margin-bottom: -150px 
+        margin-bottom: -200px 
 }
+    }
+
+.site-nav-visible {
+        margin-bottom: -130px;
+        background-color: rgba(49, 49, 56, 0.7);
     }
 
 .site-nav-item {
@@ -581,6 +587,8 @@ body {
 .banner__title {
         letter-spacing: 2.5px;
         margin-bottom: -10px;
+        text-align: center;
+        max-width: 90%;
     }
 
 .banner__sub-title {
@@ -588,7 +596,15 @@ body {
         letter-spacing: 1.5px;
         max-width: 70%;
         text-align: center;
+        font-family: "Open Sans", sans-serif;
     }
+
+@media (min-width : 0) and (max-width : 568px), (min-width: 569px) and (max-width: 900px) {
+
+.banner__sub-title {
+            font-size: 1rem
+    }
+        }
 
 .banner-search {
         display: flex;
@@ -597,12 +613,33 @@ body {
     }
 
 .banner-search__input {
-        width: 35.0625rem;
         border-radius: 100px;
         border: solid 1px #FFF;
         height: 3.125rem;
         padding-left: 10px;
+        width: 100%;
     }
+
+@media (min-width : 0) and (max-width : 568px) {
+
+.banner-search__input {
+            width: 17rem
+    }
+        }
+
+@media (min-width: 569px) and (max-width: 900px) {
+
+.banner-search__input {
+            width: 22rem
+    }
+        }
+
+@media (min-width: 901px) and (max-width : 1224px),(min-width: 1225px) {
+
+.banner-search__input {
+            width: 35.0625rem
+    }
+        }
 
 .banner-search__input:focus {
             outline: none;
@@ -632,6 +669,25 @@ body {
             opacity: 0.5;
         }
 
+@media (min-width : 0) and (max-width : 568px) {
+
+.banner-search__input::-webkit-input-placeholder {
+                font-size: 1rem
+        }
+
+.banner-search__input:-ms-input-placeholder {
+                font-size: 1rem
+        }
+
+.banner-search__input::-ms-input-placeholder {
+                font-size: 1rem
+        }
+
+.banner-search__input::placeholder {
+                font-size: 1rem
+        }
+            }
+
 .banner-search__icon {
             height: -webkit-fit-content;
             height: -moz-fit-content;
@@ -641,7 +697,16 @@ body {
 
 .banner-sample-list {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
+
+@media (min-width : 0) and (max-width : 568px) {
+
+.banner-sample-list {
+            display: none
+    }
+        }
 
 .banner-sample-list__item {
             position: relative;
@@ -885,12 +950,33 @@ body {
     }
 
 .subscribe-content__input {
-        width: 35.0625rem;
         border-radius: 100px;
         border: solid 1px #FFF;
         height: 3.125rem;
         padding-left: 10px;
+        width: 100%;
     }
+
+@media (min-width : 0) and (max-width : 568px) {
+
+.subscribe-content__input {
+            width: 17rem
+    }
+        }
+
+@media (min-width: 569px) and (max-width: 900px) {
+
+.subscribe-content__input {
+            width: 22rem
+    }
+        }
+
+@media (min-width: 901px) and (max-width : 1224px),(min-width: 1225px) {
+
+.subscribe-content__input {
+            width: 35.0625rem
+    }
+        }
 
 .subscribe-content__input:focus {
             outline: none;
@@ -919,6 +1005,25 @@ body {
             padding-left: 1.25rem;
             opacity: 0.5;
         }
+
+@media (min-width : 0) and (max-width : 568px) {
+
+.subscribe-content__input::-webkit-input-placeholder {
+                font-size: 1rem
+        }
+
+.subscribe-content__input:-ms-input-placeholder {
+                font-size: 1rem
+        }
+
+.subscribe-content__input::-ms-input-placeholder {
+                font-size: 1rem
+        }
+
+.subscribe-content__input::placeholder {
+                font-size: 1rem
+        }
+            }
 
 .subscribe-content__button {
             height: -webkit-fit-content;

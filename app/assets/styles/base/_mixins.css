@@ -1,11 +1,24 @@
 @define-mixin inputBox $sectionType {
     $(sectionType)__input {
-        width: 35.0625rem;
         border-radius: 100px;
         border: solid 1px $mainWhite;
         height: 3.125rem;
         padding-left: 10px;
+        width: 100%;
         @mixin-content;
+
+        @media (--phone) {
+            width: 17rem;
+        }
+
+        @media (--tablet) {
+            width: 22rem;
+        }
+
+        @media (--desktop),(--large-desktop) {
+            width: 35.0625rem;
+        }
+
 
         &:focus {
             outline: none;
@@ -15,6 +28,10 @@
             font-size: 1.125rem;
             padding-left: 1.25rem;
             opacity: 0.5;
+
+            @media (--phone) {
+                font-size: 1rem;
+            }
         }
     }
 }
