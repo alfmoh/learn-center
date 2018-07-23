@@ -907,7 +907,7 @@ body {
 }
 
 .testimonials__heading {
-        margin: 70px 0;
+        margin: 70px 0 30px;
     }
 
 .testimonials-list {
@@ -928,6 +928,7 @@ body {
 .testimonials-list__item__img {
                 border-radius: 50%;
                 border: solid 1.5px #999999;
+                margin: 0 auto;
             }
 
 .testimonials-list__item__testimony {

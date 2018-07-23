@@ -3,7 +3,7 @@
     text-align: center;
 
     &__heading {
-        margin: 70px 0;
+        margin: 70px 0 30px;
     }
 
     &-list {
@@ -22,6 +22,7 @@
             &__img {
                 border-radius: 50%;
                 border: solid 1.5px $lightGrey;
+                margin: 0 auto;
             }
 
             &__testimony {
