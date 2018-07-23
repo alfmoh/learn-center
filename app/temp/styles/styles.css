@@ -823,6 +823,7 @@ body {
 
 .top-courses__title {
         margin: 70px 0 -10px 0;
+        text-align: center;
     }
 
 .top-courses__sub-title {
@@ -840,6 +841,13 @@ body {
         justify-content: center;
         cursor: pointer;
     }
+
+@media (min-width : 0) and (max-width : 568px) {
+
+.top-courses-list {
+            max-width: 300px
+    }
+        }
 
 .top-courses-list__card {
             list-style: none;
@@ -860,6 +868,13 @@ body {
                 -o-object-fit: fill;
                    object-fit: fill;
             }
+
+@media (min-width : 0) and (max-width : 568px) {
+
+.top-courses-list__card__img {
+                    max-width: 300px
+            }
+                }
 
 .top-courses-list__card__desc {
                 margin: 10px 20px 0;
@@ -883,6 +898,7 @@ body {
 
 .top-courses-list__card__desc__num-students {
                     font-size: .88rem;
+                    max-width: 80px;
                 }
 
 .testimonials {
