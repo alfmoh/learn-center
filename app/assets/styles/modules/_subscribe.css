@@ -1,7 +1,7 @@
 .subscribe {
     text-align: center;
     background: linear-gradient(to right, rgba(196, 139, 64, 0.8), rgba(83, 83, 90, 0.9)), 
-                url('/assets/images/subscribe.jpg');
+                url('../../assets/images/subscribe.jpg');
     background-size: cover;
     color: $mainWhite;
     height: 40vh;
