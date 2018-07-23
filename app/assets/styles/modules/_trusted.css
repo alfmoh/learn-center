@@ -19,6 +19,11 @@
             &__img {
                 height: 100px;
                 width: 100px;
+
+                @media (--phone) {
+                    height: 50px;
+                    width: 50px;
+                }
             }
 
             &:hover {
