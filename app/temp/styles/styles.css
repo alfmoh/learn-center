@@ -949,16 +949,33 @@ body {
     background: linear-gradient(to right, rgba(196, 139, 64, 0.8), rgba(83, 83, 90, 0.9)), 
                 url('/assets/images/subscribe.jpg');
     background-size: cover;
-    color: rgb(235, 222, 211);
+    color: #FFF;
     height: 40vh;
     display: flex;
     flex-direction: column;
     margin-top: 50px;
 }
 
-.subscribe__sub-heading {
-        margin: -10px 0 -70px 0;
+@media (min-width : 0) and (max-width : 568px) {
+
+.subscribe__title {
+            font-size: 1.1rem
     }
+        }
+
+.subscribe__sub-heading {
+        max-width: 80%;
+        margin: 0 auto -70px;
+    }
+
+@media (min-width : 0) and (max-width : 568px) {
+
+.subscribe__sub-heading {
+            max-width: 60%;
+            font-size: 1rem;
+            margin-bottom: -55px
+    }
+        }
 
 .subscribe-content {
         height: 100%;
@@ -1052,6 +1069,14 @@ body {
             color: #FFF;
             padding: 12px 25px;
         }
+
+@media (min-width : 0) and (max-width : 568px) {
+
+.subscribe-content__button {
+                padding: 10px 15px;
+                margin-left: -110px
+        }
+            }
 
 .footer-content-list {
         margin: 0;

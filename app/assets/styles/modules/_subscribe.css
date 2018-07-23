@@ -3,14 +3,27 @@
     background: linear-gradient(to right, rgba(196, 139, 64, 0.8), rgba(83, 83, 90, 0.9)), 
                 url('/assets/images/subscribe.jpg');
     background-size: cover;
-    color: rgb(235, 222, 211);
+    color: $mainWhite;
     height: 40vh;
     display: flex;
     flex-direction: column;
     margin-top: 50px;
 
+    &__title {
+        @media (--phone) {
+            font-size: 1.1rem;
+        }
+    }
+
     &__sub-heading {
-        margin: -10px 0 -70px 0;
+        max-width: 80%;
+        margin: 0 auto -70px;
+
+        @media (--phone) {
+            max-width: 60%;
+            font-size: 1rem;
+            margin-bottom: -55px;
+        }
     }
     
 
@@ -27,6 +40,11 @@
             margin-left: -130px;
             color: $mainWhite;
             padding: 12px 25px;
+
+            @media (--phone) {
+                padding: 10px 15px;
+                margin-left: -110px;
+            }
         }
     }
 }
