@@ -17,6 +17,14 @@
         justify-content: center;
 
         &__item {
+            @mixin card {
+                height: 300px;
+                margin: 20px 0;
+                border-radius: 25px;
+                padding-top: 5px;
+                max-width: 98%;
+                border-top:  solid 2px;
+            }
             list-style: none;
 
             &__img {
@@ -26,7 +34,7 @@
             }
 
             &__testimony {
-               margin-top: 30px;
+               margin-top: 10px;
                color: $lightGrey;
                padding: 0 20px;
             }
